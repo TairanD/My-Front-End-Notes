@@ -7,7 +7,7 @@ Welcome to my Front End Library! 🌟 This repository serves as a collection of 
 Explore the following topics, and I hope they can help your understanding of front-end development:
 
 ### CSS
-- [Responsive Layout Strategies](./css/layout.md)
+- [Flex](./css/flexbox.md)
 
 ### JavaScript
 - [JavaScript History](./javascript/history.md)

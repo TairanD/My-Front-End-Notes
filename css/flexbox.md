@@ -30,7 +30,7 @@ axis is the primary direction of the Flex container, while the cross axis is per
 
 We can use `flex-direction` property to define the main axes. It has four value:
 
-- `flex-direction: row`
+- `flex-direction: row` (**default** if the `flex-direction` is not declared in the container)
 - `flex-direction: row-reverse`
 - `flex-direction: column`
 - `flex-direction: column-reverse`

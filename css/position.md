@@ -25,13 +25,13 @@ The `position` property defines how an element is positioned in the webpage.
 
 * A relative element also follows the normal flow.
 * However, it can relocate (offset in the doc) itself to based on the values of `top`, `right`, `bottom`, and `left`.
-  Note that the offset of a relative element will NOT affect other elements in the flow.
+  Note that the **offset** of a relative element will NOT affect other elements in the flow.
 * Will scroll as we scroll.
 
 ### 2.3 - Absolute
 
-* An absolute element does NOT locate according to the normal flow! It will also influence other 'normal' elements in
-  the page.
+* An absolute element does NOT locate according to the normal flow! Therefore, absolute element itself will NOT influence other 'normal' elements in
+  the page. In another word, other 'normal' elements will ignore the absolute.
 * An absolute element is positioned relative to its closest non-static positioned ancestor (if any), which can be determined by the
   values of `top`, `right`, `bottom`, and `left`.
 * Will scroll as we scroll.

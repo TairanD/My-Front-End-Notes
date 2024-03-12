@@ -2,4 +2,4 @@
 
 # Fetching Data in React
 
-## 
+## 1 - Using fetch function

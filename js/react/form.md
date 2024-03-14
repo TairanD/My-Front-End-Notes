@@ -59,6 +59,9 @@ const Form = () => {
 export default Form;
 ```
 
-## 5 - How to submit data to the back end?
+## 5 - Improved Technique
+
+
+## 6 - How to submit data to the back end?
 Check it out in the following link:
 - [fetch](./react/fetch.md)

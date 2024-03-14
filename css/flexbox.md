@@ -16,6 +16,8 @@ They are two important concepts in the flexbox.
 A flex container refers to the element applying the flex layout. We can define an element as a flex container by
 add `display: flex` style.
 
+*Note: flexbox will NOT influence normal flow! This flexibility makes it a powerful tool to create responsive web pages.
+
 ### 2.2 - The flex item
 
 Flex items are the child elements of a flex container. They can be arranged in various flexible ways, according to the

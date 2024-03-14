@@ -13,3 +13,6 @@ In CSS, `margin: auto;` will help us put one element in the horizontal center of
 - Less code, we only need to add one property to the target element.
 
 ## Approach 2: Using flexbox
+See [flexbox](../css/flexbox.md).
+
+## Approach 3: align-self: center;

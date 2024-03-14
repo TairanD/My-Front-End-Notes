@@ -41,3 +41,4 @@ Solution:
 consider the security implications (this approach did not solve security problem).
   - Adding `"proxy": "http://student@csi420-01-vm7.ucd.ie"` to package.json. Is such way hide sensitive contents
   in request?
+

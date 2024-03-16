@@ -1,16 +1,12 @@
 <body style="font-family: serif"></body>
 
-# Personal Questions
+# HTTP Credentials Issue
 
-This file records my questions during my development experience.
-
-## 1 - HTTP Credentials Issue
-
-### 1.1 - Problem Context
+## 1 - Problem Context
 Developing the react front-end for my final project in college (UCD final project). I need to fetch data from provided url `http://student@csi420-01-vm7.ucd.ie`
 
 
-### 1.2 - Problem Statement
+## 2 - Problem Statement
 When I use `fetch` to fetch data from an url. When the url is `http://student@csi420-01-vm7.ucd.ie`,
 error  `Failed to execute 'fetch' on 'Window': Request cannot be constructed from a URL that includes credentials: http://student@csi420-01-vm7.ucd.ie/all_questions`
 will pop out. To fix this problem, I have to add `"proxy": "http://student@csi420-01-vm7.ucd.ie"` to my package.json
@@ -18,7 +14,7 @@ file to config proxy.
 
 Yet, when I accessed url `https://catfact.ninja/fact`, the above configuration is unnecessary.
 
-### 1.3 - Answer
+## 3 - Answer
 
 Firstly, http protocol has less security compared to https protocol.
 

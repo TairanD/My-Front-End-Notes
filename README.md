@@ -18,6 +18,18 @@ Explore the following topics, and I hope they can help your understanding of fro
 - [React History](./react/history.md)
 - [React Components](./react/components.md)
 
+### Problems & Bugs
+I record problems & bugs I have met during development, and their answers, some of my thoughts in this section. I know many of them might seem silly, but I believe 
+I should figure out every silly, detailed questions to be a great engineer.
+- [Additional Wrapper](./questions/additional-wrapper.md)
+- [Skip Catch](./questions/catch-miss.md)
+- [HTTP Credential Error](./questions/http-credentials-issue.md)
+- [Variable Print](./questions/print-var.md)
+- [useState, Synchronous or Asynchronous?](./questions/useState-sync-async.md)
+
+### Other
+- [Static Files](./other/static-files.md)
+
 Each section is meticulously crafted to provide comprehensive insights and practical examples, ensuring a seamless learning experience for both beginners and seasoned professionals alike.
 
 🌐 Wanna communicate with me?

@@ -30,7 +30,7 @@ The `position` property defines how an element is positioned in the webpage.
 
 ### 2.3 - Absolute
 
-* An absolute element does NOT locate according to the normal flow! Therefore, absolute element itself will NOT influence other 'normal' elements in
+* An absolute element does _**NOT**_ locate according to the normal flow! Therefore, absolute element itself will **_NOT_** influence other 'normal' elements in
   the page. In another word, other 'normal' elements will ignore the absolute.
 * An absolute element is positioned relative to its closest non-static positioned ancestor (if any), which can be determined by the
   values of `top`, `right`, `bottom`, and `left`.

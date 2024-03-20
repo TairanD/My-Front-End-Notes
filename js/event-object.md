@@ -13,4 +13,4 @@ An object containing information about the event which is just happened.
      - keyboard keys pressed
      - ......
 3. -> the browser pass this event object to the _event handler function_ (I think we can assume event handler functions as one type of recall functions) associated with the event
-4. -> the event handler function is executed with the information provided by the event object
+4. -> the event handler function is executed with the information provided by the event object.

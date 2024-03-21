@@ -22,3 +22,14 @@ fd.append('birth date', Date.now())
 
 fd.append()
 ```
+
+## Procedure
+1. Create state variable `file` and `setFile` function using useState
+2. Create a `handleChange` function
+   1. Using e.target.files to access to selected files by user
+   2. Set retrieved files to variable `file`
+3. Associate the `handleChange` function to the `input` element
+4. Store `file` into a FormData object
+5. Create a `handleUpload` function
+   1. Using fetch/axios to post files
+6. Associate the `handleUpload` function to the `button` element

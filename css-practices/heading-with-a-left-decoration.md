@@ -15,7 +15,4 @@ reserve the space for our little decoration.
 Then, add `border-left: 5px solid red` to our heading, using the border as our decoration. 
 
 ## Step 3: 
-
-
-## Step 4:
-Be brave to adjust and try different parameters and variables, adding 
+Be brave to adjust and try different parameters and variables

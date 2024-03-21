@@ -27,4 +27,3 @@ You can clear floats using the clear property.
 ```
 This is a common technique to ensure that an element (like a container) wraps around floated elements properly. 
 Apply the clearfix class to the **parent element containing floated children**.
-

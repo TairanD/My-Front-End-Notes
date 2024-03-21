@@ -62,7 +62,7 @@ values are common-used for us to choose:
 
 - `start`: Items are packed towards the **start** of the main axis.
 - `center`: Items are **centered** along the main axis.
-- `space-evenly`: Items are **evenly** distributed along the main axis with the first item at the beginning, the last
+- `space-between`: Items are **evenly** distributed along the main axis with the first item at the beginning, the last
   item at the end.
 - `space-evenly`: Items are **evenly** distributed along the main axis with equal space around them.
 

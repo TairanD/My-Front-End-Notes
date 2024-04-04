@@ -37,18 +37,19 @@ We can use `flex-direction` property to define the main axes. It has four value:
 - `flex-direction: column`
 - `flex-direction: column-reverse`
 
-Items will be set horizontally (right-to-left) when we choose `row` and `row-reverse`.
-
+Items will be set horizontally (right-to-left) when we choose `row` and `row-reverse`. 
 While items will be set vertically (bottom-to-top) when we choose `column` and `column-reverse`.
+
+- Note*:
+The default configuration of a flexbox, flex-direction:row, will arrange the children elements in the same row and aligns
+them horizontally.
 
 ### 3.2 - The cross axes
 
 The cross axes is confirmed automatically (perpendicular to the main axis) after we define the `flex-direction`
 property.
 
-### Note*
-
-It is important to understand the concepts above as they determine the direction by which we arrange our items.
+- Note*: It is important to understand the concepts above as they determine the direction by which we arrange our items.
 
 ## 4 - Flex Container Properties
 

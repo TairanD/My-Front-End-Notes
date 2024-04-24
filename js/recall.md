@@ -50,3 +50,11 @@ js是一种解释性语言，它会在执行代码时逐行解释。因此，如
 
 - 而普通函数声明时传入的形式参数由它之下的实际参数决定，这个参数的值由它之下的调用普通函数时的声明决定
   - **_未实际创建callback逻辑而直接调用_** 时我们是受 **_实际创建普通函数逻辑的代码_** 决定的
+
+
+## React onClick Event
+Therefore, I can give you the following example:
+
+when we need to pass a function as a parameter to the onClick event, the 'onCLick' event handler function can **only accept
+one parameter**, which is the event object. This is because the onClick event handler function is automatically 
+called **by the React library**, and it passes the event object as an argument to that function.

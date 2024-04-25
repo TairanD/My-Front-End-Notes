@@ -18,10 +18,13 @@ let me = {
 Each key-value pair in an object consists of a key, which is a **string or symbol**, and its corresponding
 value, which can be of **any data type**, including numbers, strings, booleans, functions, or even other objects.
 
+
+
 ## JSON 
 
 ### Definition
-Data Exchange Format: JSON is a lightweight data exchange format used for passing and storing data between different programs.
+Data Exchange Format: JSON is a lightweight **data exchange format** (in comparison, Js objects are the instances of classes)
+used for passing and storing data between different programs.
 ```json
 {
     "name": "John",

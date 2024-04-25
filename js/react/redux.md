@@ -13,3 +13,39 @@ as a platform to preserve data and transport information.
 `react-redux` provides two things to achieve the collaboration between Redux and React: `connect` and `Provider`.
 - `connect` associates components with Redux
 - `Provider` passes `store` to components.
+
+## 3 - Redux
+Redux is mainly consisted of three parts: store, reducer, & action.
+
+### 3.1 - store
+`store` is an object, which has four major methods:
+#### 3.1.1 - dispatch
+`dispatch` is used to dispatch actions.
+
+#### 3.1.2 - subscribe
+`subscribe` is responsible to listen to the changes of states - this function will register one listener to listen any
+change when `store.dispatch` is executed.
+
+#### 3.1.3 - getState
+Acquiring the state in the `store` - when we trigger reducer with action to change state, we need to get data from the new
+state.
+
+#### 3.1.4 - replaceReducer
+Replacing the current reducer, change the logics of changing state.
+
+### 3.2 - actions
+`action` is an object, in which `type` attribute is required, along with some information. `action` can be created by `actionCreator`.
+`store.dispatch` is used to send `action`.
+
+### 3.3 - reducers
+`reducer` is a function. It requires two parameters: a `state` and an `action`. Based on the `type` of `action`, `reducer` will
+return a new `state`. There are many types of `reducer` according to different business logics. `combineReducers` combines
+them together.
+- `combineReducers`: also a reducer. It accepts a list of states and one action, then send states to their corresponding
+reducer. All reducers will receive the same action, by the type of which they will return new state if the type of action is
+existed, return default if not. In the end, these states will be combined again, and the `combineReducer` returns 
+a new list of states.
+
+#### *Note: state in Redux is not relevant to state in React.
+
+

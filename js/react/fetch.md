@@ -29,7 +29,7 @@ const Form = () => {
     return (
         <div className=''>
             <h2>Simple Example</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>Title:</label>
                 <input type='text' required value={title} onChange={e => setTitle(e.target.value)}/>
 
@@ -41,7 +41,7 @@ const Form = () => {
                     <option value="user">user</option>
                     <option value="administer">administer</option>
                 </select>
-                <button>Submit</button>
+                <button type={"submit"}>Submit</button>
             </form>
             <p>title:{title}, contents:{contents}, identity:{identity}</p>
         </div>

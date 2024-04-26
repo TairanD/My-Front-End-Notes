@@ -49,9 +49,10 @@ a new list of states.
 #### *Note: state in Redux is not relevant to state in React.
 
 ### 3.4 - Example (Without React)
+
 ```javascript
 // import Redux
-import { createStore } from "redux";
+import {createStore} from "My-Front-End-Notes/js/redux";
 
 // initialize state
 const initialState = [];
@@ -79,22 +80,22 @@ const addBookBtn = document.getElementById("addBookBtn");
 // add listener
 addBookBtn.addEventListener("click", () => {
     const bookName = addBookInput.value;
-    if (bookName){
+    if (bookName) {
         addBookInput.value = "";
     }
-    
+
     // define a customized action
     const myAction = {
         type: "addBook",
         bookName: bookName
     }
-    
+
     // send the action using 
     store.dispatch(myAction);
 });
 
 // listen the changes of state using store,subscribe
-const mySubscribe = store.subscribe(()=>{
+const mySubscribe = store.subscribe(() => {
     console.log(store.getState());
 });
 ```

@@ -48,4 +48,75 @@ a new list of states.
 
 #### *Note: state in Redux is not relevant to state in React.
 
+### 3.4 - Example (Without React)
+```javascript
+// import Redux
+import { createStore } from "redux";
+
+// initialize state
+const initialState = [];
+
+// define a customized reducer
+const myReducer = function (state = initialState, action) {
+    switch (action.type) {
+        case "addBook":
+            console.log(action)
+            return [...state, action.bookName]
+        default:
+            return [...state]
+    }
+}
+
+// create a store
+const store = createStore(myReducer);
+
+// get elements
+const root = document.getElementById("root");
+const addBook = document.getElementById("addBook");
+const addBookInput = document.getElementById("addBookInput");
+const addBookBtn = document.getElementById("addBookBtn");
+
+// add listener
+addBookBtn.addEventListener("click", () => {
+    const bookName = addBookInput.value;
+    if (bookName){
+        addBookInput.value = "";
+    }
+    
+    // define a customized action
+    const myAction = {
+        type: "addBook",
+        bookName: bookName
+    }
+    
+    // send the action using 
+    store.dispatch(myAction);
+});
+
+// listen the changes of state using store,subscribe
+const mySubscribe = store.subscribe(()=>{
+    console.log(store.getState());
+});
+```
+
+## 3.5 - Redux Procedure
+component -> store.dispatch(action)
+-> reducer
+-> store.subscribe
+-> store.getState
+-> component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

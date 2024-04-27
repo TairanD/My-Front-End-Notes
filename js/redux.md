@@ -6,10 +6,10 @@ to the child components. Yet, if we want to transport data from bottom to top, i
 For example, we can use recall functions to let the children pass specific logics and information to their parents, or we 
 can use getChildContext to pass information. However, the syntax will be quite redundant and complex. 
 
-Redux provide a centralized state management. By wrapping an additional component to the top-level component, it can function 
+Redux provide a globally centralized state management. By wrapping an additional component to the top-level component, it can function 
 as a platform to preserve data and transport information.
 
-## 2 - How does Redux work with React?
+## 2 - How does Redux work with React ([React-Redux](./react/react-redux.md))?
 `react-redux` provides two things to achieve the collaboration between Redux and React: `connect` and `Provider`.
 - `connect` associates components with Redux
 - `Provider` passes `store` to components.
@@ -20,7 +20,7 @@ Redux is mainly consisted of three parts: store, reducer, & action.
 ### 3.1 - store
 `store` is an object, which has four major methods:
 #### 3.1.1 - dispatch
-`dispatch` is used to dispatch actions.
+`dispatch(action)` is used to dispatch actions. The execution of `dispatch(action)` will immediately trigger `reducer`.
 
 #### 3.1.2 - subscribe
 `subscribe` is responsible to listen to the changes of states - this function will register one listener to listen any
@@ -40,7 +40,7 @@ Replacing the current reducer, change the logics of changing state.
 ### 3.3 - reducers
 `reducer` is a function. It requires two parameters: a `state` and an `action`. Based on the `type` of `action`, `reducer` will
 return a new `state`. There are many types of `reducer` according to different business logics. `combineReducers` combines
-them together.
+them together. `reducer` **is the place where data processing is conducted**.
 - `combineReducers`: also a reducer. It accepts a list of states and one action, then send states to their corresponding
 reducer. All reducers will receive the same action, by the type of which they will return new state if the type of action is
 existed, return default if not. In the end, these states will be combined again, and the `combineReducer` returns 

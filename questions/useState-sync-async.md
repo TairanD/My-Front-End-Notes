@@ -32,7 +32,9 @@ yet because the state update is asynchronous. Therefore, you'll see the old valu
 ## 4 - Further Explore
 When I was accidentally add async keyword ahead of the recall function. Following error popped out:
 ```javascript
-// Effect callbacks are synchronous to prevent race conditions. Put the async function inside:  
+// The ERROR IS:
+
+// Effect callbacks are synchronous to prevent race conditions. Put the async function inside:
 useEffect(() => {   
     async function fetchData() {     // You can await here     
         const response = await MyAPI.getData(someId);     

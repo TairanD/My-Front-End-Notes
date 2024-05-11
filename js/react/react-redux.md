@@ -36,10 +36,8 @@ containing information(action + dispatch) that will be passed to component with 
 
 
 ## 4 - React -> Redux -> React
-### 4.1 
-Provider component accepts the store of redux as props, then passes it through context.
 
-
+<img src="react-img/react-redux.png" width = "600">
 
 
 

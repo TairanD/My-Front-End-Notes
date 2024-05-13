@@ -37,7 +37,7 @@ containing information(action + dispatch) that will be passed to component with 
 
 ## 4 - React -> Redux -> React
 
-<img src="react-img/react-redux.png" width = "600">
+<img src="react-img/react-redux.png">
 
 
 
